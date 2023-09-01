@@ -20,6 +20,7 @@ import { Ground } from "./Ground";
 import { FloatingGrid } from "./FloatingGrid";
 import { Rings } from "./Rings";
 import { BrowserRouter, Route, Router, Routes } from "react-router-dom";
+import BookingPage from "./Booking";
 
 function CarShow() {
   return (
@@ -98,6 +99,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Splash />} />
+          <Route path="/booking" element={<BookingPage />} />
         </Routes>
       </BrowserRouter>
     </div>
