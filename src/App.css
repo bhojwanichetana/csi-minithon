@@ -26,8 +26,10 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 1;
-  background-color: var(--yellow-color);
+  background-color: var(--blue-color);
   padding: 2rem;
+  border-radius: 20px;
+  box-shadow: var(--blue-color) 0px 7px 29px 0px;
 }
 .ArrivalWrapper {
   position: absolute;
@@ -35,11 +37,15 @@ body {
   width: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  height: 50%;
-  z-index: 1;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding: 2rem 0;
+  z-index: 1;
+  background-color: var(--blue-color);
+  border-radius: 20px;
+  box-shadow: var(--blue-color) 0px 7px 29px 0px;
 }
 .BookingWrapper {
   margin: 0 auto;

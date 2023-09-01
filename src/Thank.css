@@ -1,53 +1,41 @@
 .cyberpunk-thank-you {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    text-align: center;
-  }
-  
-  .star-rating {
-    margin: 20px 0;
-  }
-  
-  .star-rating label {
-    font-size: 18px;
-  }
-  
-  .star-rating input {
-    width: 50px;
-    font-size: 24px;
-    padding: 5px;
-    margin: 5px;
-  }
-  
-  textarea {
-    margin: 10px 0;
-    padding: 10px;
-    width: 100%;
-    max-width: 400px; /* Adjust as needed */
-  }
-  
-  button {
-    margin: 20px 0;
-    padding: 10px 20px;
-    background-color: #00ff00; /* Choose your button color */
-    color: #000; /* Choose your text color */
-    border: none;
-    cursor: pointer;
-    font-size: 18px;
-  }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  width: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  text-align: center;
+  background-color: var(--blue-color);
+  padding: 2rem 0;
+  border-radius: 20px;
+  box-shadow: var(--blue-color) 0px 7px 29px 0px;
+}
 
-  feedback{
-    display: flex;
-  }
+.star-rating {
+  margin: 20px 0;
+}
 
-  
-  
-  button:hover {
-    background-color: #00cc00; /* Change button color on hover */
-  }
-  
-  /* Add any additional CSS styles as needed to match your Cyberpunk 2077 theme */
-  
+.star-rating label {
+  font-size: 18px;
+}
+
+.star-rating input {
+  width: 50px;
+  font-size: 24px;
+  padding: 5px;
+  margin: 5px;
+}
+
+textarea {
+  margin: 10px 0;
+  padding: 10px;
+  width: 100%;
+  max-width: 400px; /* Adjust as needed */
+}
+
+/* Add any additional CSS styles as needed to match your Cyberpunk 2077 theme */
