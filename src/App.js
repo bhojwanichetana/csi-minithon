@@ -20,7 +20,7 @@ import { Ground } from "./Ground";
 import { FloatingGrid } from "./FloatingGrid";
 import { Rings } from "./Rings";
 import { BrowserRouter, Route, Router, Routes } from "react-router-dom";
-
+import "./App.css";
 function CarShow() {
   return (
     <>
@@ -84,11 +84,20 @@ function CarShow() {
 
 function Splash() {
   return (
-    <Suspense fallback={null}>
-      <Canvas shadows>
-        <CarShow />
-      </Canvas>
-    </Suspense>
+    <div>
+      <div className="SplashWrapper">
+        <h1>NotUber</h1>
+
+        <button class="btn">
+          <span class="btn__content">Book a ride</span>
+        </button>
+      </div>
+      <Suspense fallback={null}>
+        <Canvas shadows>
+          <CarShow />
+        </Canvas>
+      </Suspense>
+    </div>
   );
 }
 
