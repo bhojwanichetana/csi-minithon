@@ -19,12 +19,19 @@ import { Car } from "./Car";
 import { Ground } from "./Ground";
 import { FloatingGrid } from "./FloatingGrid";
 import { Rings } from "./Rings";
-import { BrowserRouter, Route, Router, Routes } from "react-router-dom";
-import BookingPage from "./Booking";
+import {
+  BrowserRouter,
+  Route,
+  Router,
+  Routes,
+  useNavigate,
+} from "react-router-dom";
 import "./App.css";
 import "./cyber-grid.css";
 import "./style.css";
 import "./cyberpunk.css";
+import Loader from "./Loader";
+import Component from "./Component";
 
 function CarShow() {
   return (
@@ -88,15 +95,10 @@ function CarShow() {
 }
 
 function Splash() {
+  const [route, setRoute] = React.useState("");
   return (
     <div>
-      <div className="SplashWrapper">
-        <h1>NotUber</h1>
-
-        <button class="btn cyber-glitch-0">
-          <span class="btn__content">Book a ride</span>
-        </button>
-      </div>
+      <Component route={route} setRoute={setRoute} />
       <Suspense fallback={null}>
         <Canvas shadows>
           <CarShow />
@@ -112,7 +114,6 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Splash />} />
-          <Route path="/booking" element={<BookingPage />} />
         </Routes>
       </BrowserRouter>
     </div>
