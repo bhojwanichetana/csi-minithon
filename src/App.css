@@ -10,13 +10,14 @@ body {
 }
 .SplashWrapper {
   position: absolute;
-  width: 100vw;
+  width: 76%;
   z-index: 1;
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 2rem;
-  top: 0;
+  top: 20px;
+  padding: 0 12%;
 }
 
 .btn {
@@ -48,4 +49,9 @@ body {
 
 .SplashWrapper > h1 {
   color: var(--yellow-color);
+}
+
+button:hover {
+  transform: scale(1.1);
+  transition: 0.2s ease;
 }

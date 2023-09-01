@@ -22,6 +22,9 @@ import { Rings } from "./Rings";
 import { BrowserRouter, Route, Router, Routes } from "react-router-dom";
 import BookingPage from "./Booking";
 import "./App.css";
+import "./cyber-grid.css";
+import "./style.css";
+import "./cyberpunk.css";
 
 function CarShow() {
   return (
@@ -90,7 +93,7 @@ function Splash() {
       <div className="SplashWrapper">
         <h1>NotUber</h1>
 
-        <button class="btn">
+        <button class="btn cyber-glitch-0">
           <span class="btn__content">Book a ride</span>
         </button>
       </div>
