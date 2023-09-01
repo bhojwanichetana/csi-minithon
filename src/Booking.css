@@ -1,0 +1,53 @@
+.booking-page {
+    display: flex;
+    flex-direction: column;
+    height: 100vh; /* Make the page take up the full viewport height */
+    overflow: hidden; /* Hide overflow content */
+  }
+  
+  .top-section {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 40px;
+  }
+  
+  .source {
+    flex: 1;
+    font-size: 40px;
+    padding-top: 80px;
+    padding-left: 200px;
+    padding-bottom: 80px;
+    background-color: #222; /* Example background color */
+    color: white; /* Example text color */
+  }
+  .destination {
+    flex: 1;
+    font-size: 40px;
+    padding-top: 80px;
+    padding-left: 350px;
+    padding-bottom: 80px;
+
+    background-color: #222; /* Example background color */
+    color: white; /* Example text color */
+  }
+  
+  .car-options {
+    flex: 1; /* Take up the remaining available space */
+    padding-top: 180px;
+    padding-left: 400px;
+    
+    background-color: #333; /* Example background color */
+    color: white; /* Example text color */
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  li {
+    margin-bottom: 10px;
+  }
+  
+  /* You can add more styling to customize the appearance as needed */
+  

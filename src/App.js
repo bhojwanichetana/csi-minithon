@@ -32,6 +32,7 @@ import "./style.css";
 import "./cyberpunk.css";
 import Loader from "./Loader";
 import Component from "./Component";
+import ThankYouPage from "./Thank";
 
 function CarShow() {
   return (
