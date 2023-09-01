@@ -25,6 +25,7 @@ import "./App.css";
 import "./cyber-grid.css";
 import "./style.css";
 import "./cyberpunk.css";
+import ThankYouPage from "./Thank";
 
 function CarShow() {
   return (
@@ -113,6 +114,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Splash />} />
           <Route path="/booking" element={<BookingPage />} />
+          <Route path="/feedback" element={<ThankYouPage />} />
         </Routes>
       </BrowserRouter>
     </div>

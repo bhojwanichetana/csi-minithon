@@ -5,27 +5,37 @@
     overflow: hidden; /* Hide overflow content */
   }
   
-  .source,
-  .destination {
-    padding: 20px;
-    background-color: #222; /* Example background color */
-    color: white; /* Example text color */
+  .top-section {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-between;
+    padding-top: 40px;
   }
   
   .source {
-    order: 1; /* Set the source section to appear first */
+    flex: 1;
+    font-size: 40px;
+    padding-top: 80px;
+    padding-left: 200px;
+    padding-bottom: 80px;
+    background-color: #222; /* Example background color */
+    color: white; /* Example text color */
   }
-  
   .destination {
-    order: 2; /* Set the destination section to appear second */
+    flex: 1;
+    font-size: 40px;
+    padding-top: 80px;
+    padding-left: 350px;
+    padding-bottom: 80px;
+
+    background-color: #222; /* Example background color */
+    color: white; /* Example text color */
   }
   
   .car-options {
     flex: 1; /* Take up the remaining available space */
-    padding: 20px;
+    padding-top: 180px;
+    padding-left: 400px;
+    
     background-color: #333; /* Example background color */
     color: white; /* Example text color */
   }

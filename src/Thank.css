@@ -1,0 +1,53 @@
+.cyberpunk-thank-you {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+  }
+  
+  .star-rating {
+    margin: 20px 0;
+  }
+  
+  .star-rating label {
+    font-size: 18px;
+  }
+  
+  .star-rating input {
+    width: 50px;
+    font-size: 24px;
+    padding: 5px;
+    margin: 5px;
+  }
+  
+  textarea {
+    margin: 10px 0;
+    padding: 10px;
+    width: 100%;
+    max-width: 400px; /* Adjust as needed */
+  }
+  
+  button {
+    margin: 20px 0;
+    padding: 10px 20px;
+    background-color: #00ff00; /* Choose your button color */
+    color: #000; /* Choose your text color */
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+  }
+
+  feedback{
+    display: flex;
+  }
+
+  
+  
+  button:hover {
+    background-color: #00cc00; /* Change button color on hover */
+  }
+  
+  /* Add any additional CSS styles as needed to match your Cyberpunk 2077 theme */
+  
